@@ -24,7 +24,24 @@ spausdinti_zinutes(3, "Kaip sekasi", pabaiga="?")
 def dauginti_skaicius(n: int, *args: int):
      return [elem * n for elem in args]
 print(dauginti_skaicius(7, 10, 11, 50))
+# 6 Task
+def rodyti_duomenis(**kwargs):
+     print(kwargs)
+rodyti_duomenis(name="Edgar", surname="Lipnevic")
 
+print("----------------------------------------")
+# 7 Task
+def registruoti_naudotoja(vardas, el_pastas, **kwargs):
+    naudotojas = {"Vardas": vardas, "El. paštas": el_pastas}
+    naudotojas.update(kwargs)
+    return naudotojas
+naudotojas = registruoti_naudotoja("Edgar", "edgar@edgar.lt", amzius=27, miestas="Vilnius")
+for key, value in naudotojas.items():
+    print(f"{key}: {value}")
+# 8 Task
+def atspausdinti_lista(listas, **kwargs):
+        print(*listas, **kwargs)
+atspausdinti_lista(["Edgar", "27", "juvelyrika"], sep="<>", end="...")
 
 
 
