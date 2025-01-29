@@ -13,5 +13,5 @@ print(sveikinti_vardus("Jonas", "Asta", "Mantas"))
 # 3 Task
 def pakelti_laipsniu(n, *args):
     for num in args:
-        print(num ** n)
-pakelti_laipsniu(2, 2, 3, 4)
+        print(n**num)
+pakelti_laipsniu(3, 2, 3, 4)
