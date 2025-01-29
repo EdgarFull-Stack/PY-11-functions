@@ -19,7 +19,7 @@ pakelti_laipsniu(3, 2, 3, 4)
 def spausdinti_zinutes(kartai, *args, pabaiga="!"):
     for zinute in args:
         print((zinute +" ")*kartai+pabaiga)
-spausdinti_zinutes(3, "Labas", "Kaip sekasi", pabaiga=".")
+spausdinti_zinutes(3, "Kaip sekasi", pabaiga="?")
 # 5 Task
 def dauginti_skaicius(n: int, *args: int):
      return [elem * n for elem in args]
